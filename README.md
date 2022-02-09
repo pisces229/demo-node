@@ -18,10 +18,17 @@
 
 ### Node Package Manager
 [Express](https://github.com/expressjs/express)
+
 `npm install express --save`
+
 `npm install @types/express --save-dev`
+
 [Lodash](https://github.com/lodash/lodash)
+
 `npm install lodash --save`
+
 `npm install @types/lodash --save-dev`
+
 [Rxjs](https://github.com/reactivex/rxjs)
+
 `npm install rxjs --save`
