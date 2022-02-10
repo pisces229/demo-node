@@ -7,7 +7,6 @@ import Koa_Views from 'koa-views';
 import Path from 'path';
 export default () => {
   const server = new Koa();
-
   // Middleware
   // server.use(async (context, next) => {
   //   console.log(`start`);
@@ -49,6 +48,5 @@ export default () => {
     });
   });
   server.use(router.routes());
-
   server.listen(9000, () => console.log('server-koa has started'));
 }
