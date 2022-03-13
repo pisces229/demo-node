@@ -3,7 +3,8 @@
 // import app from './app-lodash';
 // import app from './app-rxjs';
 // import app from './app-winston';
-import app from './app-test';
+// import app from './app-test';
+import app from './app-import';
 app();
 
 // callback
