@@ -1,10 +1,11 @@
+import app from './app-start';
 // import app from './app-child_process';
 // import app from './app-fs';
 // import app from './app-lodash';
 // import app from './app-rxjs';
 // import app from './app-winston';
 // import app from './app-test';
-import app from './app-import';
+// import app from './app-import';
 app();
 
 // callback

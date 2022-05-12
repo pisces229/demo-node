@@ -15,6 +15,8 @@
 ### 參考文章
 [The Will Will Web - 如何快速建置一個 Node.js 專案並使用 TypeScript 與 VSCode 進行開發](https://blog.miniasp.com/post/2021/07/18/Build-Nodejs-Dev-Env-with-TypeScript-Nodemon-and-VSCode)
 
+[程式碼檢查](https://willh.gitbook.io/typescript-tutorial/engineering/lint)
+
 ## Node Package Manager
 ### 框架
 #### [Top 12 Best Node.js Frameworks](https://www.simform.com/blog/best-nodejs-frameworks/)
