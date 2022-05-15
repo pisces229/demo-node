@@ -7,9 +7,10 @@ import Child_Process from 'child_process';
 import Formidable from 'formidable';
 export default () => {
   const serverOptions: ServerOptions = {
-    key: Fs.readFileSync('d:/openssl/server/server.key'),
-    passphrase: '123456',
-    cert: Fs.readFileSync('d:/openssl/server/server.crt'),
+    // pfx: '',
+    // passphrase: '123456',
+    key: Fs.readFileSync('d:/mkcert/localhost+2-key.pem'),
+    cert: Fs.readFileSync('d:/mkcert/localhost+2.pem'),
     requestCert: true,
     rejectUnauthorized: false
   };
@@ -98,7 +99,7 @@ export default () => {
       };
       case '/upload/submit': {
         console.log('upload submit doing');
-        var form = new Formidable.IncomingForm();
+        const form = new Formidable.IncomingForm();
         form.parse(request, (err, fields, files) => {
           console.log(err);
           console.log(fields);
@@ -121,5 +122,5 @@ export default () => {
     };
     console.log(`[${ request.url }] end`);
   // }).listen(9000, () => console.log('server-http(900) has started'));
-  }).listen(443, () => console.log('server-http(443) has started'));
+  }).listen(9090, () => console.log('server-http(9090) has started'));
 }
