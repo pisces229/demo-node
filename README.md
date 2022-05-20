@@ -92,3 +92,17 @@
 [Rxjs](https://www.npmjs.com/package/rxjs)
 
 `npm install rxjs --save`
+
+### Self Certification
+
+[Install Chocolatey with PowerShell](https://docs.chocolatey.org/en-us/choco/setup)
+
+`choco --version`
+
+`choco install mkcert`
+
+`mkcert -install`
+
+`mkcert -help`
+
+`mkcert localhost 127.0.0.1 ::1`
