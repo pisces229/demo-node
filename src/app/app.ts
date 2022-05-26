@@ -1,3 +1,4 @@
+import { AppConst } from './app-const';
 import app from './app-start';
 // import app from './app-child_process';
 // import app from './app-fs';
@@ -11,6 +12,8 @@ app();
 // callback
 // const callback = (method: Function, value: string) => method(value);
 // callback((value) => console.log(`callback method:${ value }`), 'test');
+
+let appConst = AppConst;
 
 // Typescript
 
