@@ -162,3 +162,46 @@ interface MergeInterface {
 namespace CreateNamespace {
   // ....
 }
+
+// extends
+interface FirstExtends {
+  id: number;
+  name: string;
+}
+interface SecondExtends extends FirstExtends {
+  enable: boolean;
+  run: () => void;
+}
+type ExtendsType = SecondExtends;
+// Pick
+// type Pick<T, K extends keyof T> = {
+//   [P in K]: T[P];
+// };
+// type FirstPick = Pick<SecondExtends, 'id'>;
+type FirstPick = Pick<FirstExtends, 'id' | 'name'>;
+type SecondPick = Pick<FirstExtends, 'id'>['id'];
+// type SecondPick = Pick<SecondExtends, 'id' | 'name'>['id'];
+interface KeyofPick {
+  id: number;
+};
+// type ThirdPick = Pick<FirstExtends, keyof KeyofPick>;
+type ThirdPick =  Pick<Pick<FirstExtends, 'id' | 'name'>, 'id'>;
+
+// Omit
+// type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
+type FirstOmit = Omit<FirstExtends, 'id'>;
+type SecondOmit = Omit<FirstExtends, 'id'>['name'];
+interface KeyofOmit {
+  enable: boolean;
+  run: () => void;
+};
+// type ThirdOmit = Omit<SecondExtends, keyof KeyofOmit>;
+type ThirdOmit = Omit<Omit<SecondExtends, 'id'>, 'name'>;
+
+// type / interface
+type Alias = { num: number };
+interface Interface {
+  num: number;
+};
+declare function aliased(arg: Alias): Alias;
+declare function interfaced(arg: Interface): Interface;

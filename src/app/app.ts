@@ -21,6 +21,3 @@ app();
 // const DemoMethod = async () => setTimeout(() => console.log('DemoMethod'), 3000);
 // const DemoRun = async () => await DemoMethod();
 // DemoRun();
-
-
-
