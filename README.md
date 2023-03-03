@@ -1,18 +1,35 @@
 ## 建立專案
+
 `mkdir demo-node`
+
 ### 初始化 package.json 檔案
+
 `npm init -y`
+
 ### 產生 .npmrc 檔案
+
 `echo 'loglevel=silent' > .npmrc`
+
 ### 安裝 TypeScript 必備的 npm 套件
+
 `npm install typescript @types/node tslint nodemon ts-node --save-dev`
+
 ### 初始化 tsconfig.json 設定檔
+
 `npx typescript --init`
+
+`npx tsc --init`
+
 ### 初始化 tslint.json 設定檔
+
 `npx tslint --init`
+
 ### 初始化 .editorconfig 編輯器設定檔
+
 `npx node-editorconfig`
+
 ### 參考文章
+
 [The Will Will Web - 如何快速建置一個 Node.js 專案並使用 TypeScript 與 VSCode 進行開發](https://blog.miniasp.com/post/2021/07/18/Build-Nodejs-Dev-Env-with-TypeScript-Nodemon-and-VSCode)
 
 [程式碼檢查](https://willh.gitbook.io/typescript-tutorial/engineering/lint)
@@ -92,6 +109,10 @@
 [Rxjs](https://www.npmjs.com/package/rxjs)
 
 `npm install rxjs --save`
+
+[json-server](https://github.com/typicode/json-server)
+
+`npm install json-server @types/json-server --save-dev`
 
 ### Upgrading npm dependencies
 
