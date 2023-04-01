@@ -200,6 +200,7 @@ type ThirdOmit = Omit<Omit<SecondExtends, 'id'>, 'name'>;
 
 // type / interface
 type Alias = { num: number };
+// type A = {}; type B = {}; type C = A & B;
 interface Interface {
   num: number;
 };
