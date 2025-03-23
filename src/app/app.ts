@@ -9,6 +9,9 @@ import { AppConst } from './app-const';
 import app from './app-syntax';
 app();
 
+// console.log(global)
+// console.log(globalThis)
+
 // callback
 // const callback = (method: Function, value: string) => method(value);
 // callback((value) => console.log(`callback method:${ value }`), 'test');
