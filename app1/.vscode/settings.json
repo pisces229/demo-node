@@ -1,0 +1,14 @@
+{
+  // TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Default Formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Code Actions on Save
+  "editor.codeActionsOnSave": {
+    "source.removeUnusedImports": "explicit",
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  // Format on Save
+  "editor.formatOnSave": true
+}
