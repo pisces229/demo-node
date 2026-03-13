@@ -1,0 +1,39 @@
+# Lefthook config
+pre-commit:
+  only_branches:
+    - main
+    - develop
+  # exclude_branches:
+  #     - feature/
+  parallel: true
+  commands:
+    check:
+      root: "."
+      run: echo "pwd" & pwd & exit 1
+    app1-format:
+      glob: "**/*.{js,ts}"
+      # pnpm -C app1 run lint --fix {staged_files}
+      # pnpm -C app1 run format --write {staged_files}
+      # && git add {staged_files}
+      run: pnpm -C app1 run format
+    # app2-format:
+    #   glob: "**/*.{js,ts}"
+    #   # pnpm -C app2 run lint --fix {staged_files}
+    #   # pnpm -C app2 run format --write {staged_files}
+    #   # && git add {staged_files}
+    #   run: pnpm -C app2 run format
+    # backend-format:
+    #   glob: "**/*.{cs}"
+    #   # dotnet format --include {staged_files}
+    #   # && git add {staged_files}
+    #   run: dotnet format --include {staged_files}
+
+pre-push:
+  commands:
+    check:
+      root: "."
+      run: echo "pwd" & pwd & exit 1
+    # frontend-test:
+    #   run: npm run test:unit
+    # backend-test:
+    #   run: dotnet test

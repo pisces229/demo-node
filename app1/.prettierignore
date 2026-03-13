@@ -1,0 +1,16 @@
+# .git/
+.git/
+.gitignore
+
+# .prettierignore.
+node_modules/
+pnpm-lock.yaml
+dist/
+build/
+output/
+*.md
+*.lock
+*.min.js
+*.min.css
+sw.js
+.env*

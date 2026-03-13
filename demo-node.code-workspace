@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "app1",
+    },
+    {
+      "path": "app2",
+    },
+  ],
+  "settings": {
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "npm.packageManager": "pnpm",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "eslint.workingDirectories": [
+      { "directory": "app1", "changeProcessCWD": true },
+      { "directory": "app2", "changeProcessCWD": true },
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+    },
+    "eslint.validate": ["javascript", "typescript"],
+  },
+  "extensions": {},
+}
